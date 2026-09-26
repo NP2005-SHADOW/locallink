@@ -126,15 +126,17 @@ export default function CustomerDashboard() {
             )}
           </nav>
         </div>
-
-        <div>
+          <div className="space-y-3 pt-6 border-t border-slate-100">
           <button 
-            onClick={logout} 
-            className="w-full flex items-center gap-3.5 px-4 py-3 rounded-2xl text-rose-600 hover:bg-rose-50 font-bold text-sm transition cursor-pointer"
+            onClick={() => navigate('/')} 
+            className="w-full py-3 px-4 bg-slate-900 hover:bg-indigo-600 text-white font-bold rounded-2xl text-sm transition shadow-sm cursor-pointer flex items-center justify-center gap-2"
           >
-            <span>🚪</span> Logout
+            <span>🔄</span> Switch to Customer
           </button>
+          
+          
         </div>
+       
       </aside>
 
       {/* MAIN CONTENT WORKSPACE */}

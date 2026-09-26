@@ -235,12 +235,7 @@ export default function ProviderDashboard() {
             >
               <span>📈</span> Analytics
             </button>
-            <button 
-              onClick={() => setCurrentView('dashboard')}
-              className="w-full flex items-center gap-3.5 px-4 py-3 rounded-2xl hover:bg-slate-50 text-slate-600 font-medium text-sm transition text-left cursor-pointer"
-            >
-              <span>⚙️</span> Settings
-            </button>
+            
           </nav>
         </div>
 
@@ -251,12 +246,7 @@ export default function ProviderDashboard() {
           >
             <span>🔄</span> Switch to Customer
           </button>
-          <button 
-            onClick={logout} 
-            className="w-full py-2.5 text-rose-500 hover:bg-rose-50 font-bold rounded-xl text-sm transition cursor-pointer"
-          >
-            Logout
-          </button>
+         
         </div>
       </aside>
 
