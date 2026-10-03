@@ -52,7 +52,7 @@ export default function Navbar() {
     setSearchQuery(''); // Clear navbar search after selection
     setIsDropdownOpen(false);
     // Navigate to Home and pass the search data via URL parameters
-    navigate(`/?category=${encodeURIComponent(selectedItem.category)}&service=${encodeURIComponent(selectedItem.service)}`);
+    navigate(`/providers?category=${encodeURIComponent(selectedItem.category)}&service=${encodeURIComponent(selectedItem.service)}`)
   };
 
   const handleTypingSubmit = (e) => {

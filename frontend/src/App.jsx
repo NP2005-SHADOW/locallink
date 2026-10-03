@@ -4,6 +4,7 @@ import axios from 'axios'; // 1. Import axios
 import { AuthProvider } from './context/AuthContext';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
+import Providers from './pages/Providers'; // <-- Added the new Providers page import
 import Login from './pages/Login';
 import Register from './pages/Register';
 import CustomerDashboard from './pages/CustomerDashboard';
@@ -23,6 +24,8 @@ export default function App() {
           <main>
             <Routes>
               <Route path="/" element={<Home />} />
+              {/* Added the Providers route below */}
+              <Route path="/providers" element={<Providers />} />
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
               <Route path="/dashboard" element={<CustomerDashboard />} />
